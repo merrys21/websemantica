@@ -1,0 +1,671 @@
+/*
+    Nombre: Maria Fernandez 
+    Fecha: 29/11/2024 
+    Modulo: Lenguaje de marcas y Sistemas de gestión de la información. 
+    UD2. 
+    LMSGI02 Tarea evaluativa 2 (80%). Sitio Web.
+    Autoevaluación: 
+    Descripción:    Desarrollar el sitio web diseñado en la primera tarea de evaluación.
+                    Mostrar información sobre un tema, en mi caso, una página de recetas.
+                    Sitio completo con 5 páginas web (presentación, navegación, noticias, listado de productos, etc.)
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    /*border: 1px solid black;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding: 2%;
+
+    /* Raleway font */
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;  
+    background-color: white;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 1%;    
+}
+
+nav {
+    flex-basis: 90%;
+}
+
+.img-logo-cabecera{
+    width: 100%;
+}
+
+.logo-cabecera{
+   flex-basis: 10%;
+}
+
+footer{
+    margin-top: 1%;
+    padding: 0.7%;
+    text-align: center;
+    background-color: #808080;
+    border-radius:5px;
+    color: white;
+    font-size: 0.7rem;
+}
+
+ul{
+    list-style: none;
+}
+
+li {
+    display: inline-block;    
+    padding: 0% 1% 0.5% 1%;   
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.enlace {
+    padding: 0.25rem;
+    text-align: center;
+    font-weight: 600;
+    color: grey; 
+    border-bottom: 0.2rem solid white;     
+}
+
+/* Pseudo-clase hover */
+.enlace:hover {
+    border-bottom: 0.2rem solid #609000;
+    color: black;    
+}
+
+
+/* INICIO */
+#presentacion {
+    display: flex;
+    align-items: center;
+    background-color: #e7e8ea;
+    border-radius: 20px;
+    margin-bottom: 1%;              
+}
+
+.modulo-texto {
+    flex-basis: 60%;
+    padding: 2%;   
+}
+
+.modulo-img {
+    flex-basis: 40%;
+}
+
+.img-cabecera{
+    width: 100%;
+}
+
+.titular-cabecera{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.texto-cabecera{
+    font-size: 0.90rem;
+    line-height: 1.3rem;
+}
+
+.verde{
+    color: #609000;
+    font-weight: 900;    
+}
+
+#contenido-inicio{
+    display: flex;
+    margin-right: 1%;
+}
+
+.recetas-pop{
+    flex-basis: 50%;
+}
+
+.grupo-recetas-pop{
+    display: flex;
+}
+
+.recetas-pop h3, aside h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1.5%;
+    border-left: 5px solid #609000;
+    padding-left: 2%;   
+}
+
+.receta-popular h6{
+    font-size: 1rem;
+    font-weight: 700;  
+}
+
+.descripcion-receta{
+    font-size: 0.80rem;   
+}
+
+.enlace-receta {
+    font-size: 0.75rem;
+    color: #609000;
+    font-weight: 700;    
+}
+
+.enlace-receta:hover, .enlace-noticia:hover{
+    color:black;
+    text-decoration: wavy underline;
+}
+
+.img-w100{
+    width: 100%;
+}
+
+.ultima-noticia, .receta-popular, .categoria, .menu{
+    flex-grow:1;
+    margin: 0.3rem;
+    padding: 0.5rem;
+}
+
+aside {
+    flex-basis: 50%;
+    margin-left: 1%;    
+}
+
+.ultima-noticia{
+    border-bottom: 1px solid grey;
+    margin-bottom: 2%;
+}
+
+.texto-ultima-noticia{
+    width: 90%;
+    display: inline-block;
+    font-size: 0.75rem;
+}
+.texto-ultima-noticia h6 {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.enlace-noticia{   
+    font-size: 0.8rem;
+    color: #609000;
+    font-weight: 700;
+}
+
+.enlace-footer {
+    color: black;
+    font-weight: 700;
+}
+
+
+/* RECETAS */
+
+#categorias {
+    display: flex;
+    text-align: center;
+}
+
+.categoria{
+    padding: 0.5% 3.5%;
+    margin: 0 2%;
+    border: 1px solid #609000;
+    border-radius: 2rem;
+    filter: grayscale(75%);     
+}
+
+.categoria:hover{
+    filter: none;
+    cursor: pointer;
+}
+
+#contenedor-menu-guia{
+    display: flex;
+    margin-top: 2%;
+}
+
+#menus{
+    flex-basis: 70%; 
+}
+
+#menus h2{
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #609000;
+    padding: 0.5% 0;    
+}
+
+.menu{
+    display: inline-block;
+    width: 30%;
+    text-align: center;   
+}
+
+.menu h6{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#guia{
+    flex-basis: 28%;
+    margin-left: 2%;  
+
+    color: white;
+    background-color: #609000;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);    
+}
+
+#guia h2{
+    margin-top: 4%;
+    margin-bottom: 3%;
+    text-align: center;   
+}
+
+.img-guia{
+    float: left;
+    width: 50%;
+    padding: 0 5%;
+}
+
+.margen-bot{
+    margin-bottom: 3%;
+}
+
+.enlace-menu{
+    display: block;  
+    padding: 2%;
+    border: 1px solid #609000;
+    font-size: 0.8rem;
+    color:#609000;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);        
+}
+
+.enlace-menu:hover{
+    border: 1px solid #609000;
+    color:black;
+    background-color:#609000;
+    font-weight: 700;
+}
+
+.guia-texto{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 0.7rem;
+    padding: 0 4%;
+}
+
+.enlace-guia{
+    font-size: 0.8rem; 
+    font-weight: 700;
+    color:white;
+}
+
+.enlace-guia:hover{
+    color:black;   
+}
+
+
+/* LISTADO RECETAS */
+
+.titulo-categoria{
+    text-align: center;
+    border-bottom: 2px solid #609000;
+    margin-bottom: 2%;
+}
+
+#contenedor-categorias-recetas{
+    display: flex;
+}
+
+#listado-categorias {
+    flex-basis: 10%;
+    text-align: center;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.lis-categoria{
+    padding: 1%;
+    margin-bottom:10%;
+    filter: grayscale(75%);    
+}
+
+.lis-categoria:hover{
+    filter: none;
+    cursor: pointer;  
+}
+
+#listado-recetas{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap
+}
+
+.receta, .receta-popular{
+    flex-basis: 29%;
+    padding: 0%;
+    margin: 2%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);     
+}
+
+.nombre-enlace-receta, .nombre-enlace-receta-popular {
+    margin: 5%;
+}
+
+.nombre-enlace-receta-popular h4 {
+    font-size: 0.75rem;
+}
+
+.borde-redondeado-medio {
+    border-radius: 20px 20px 0 0;
+}
+
+.enlace-lis-receta{
+    color:#609000;
+    font-weight: 700;
+    font-size: 0.90rem;
+}
+
+.enlace-lis-receta:hover{
+    color:black;
+    text-decoration: wavy underline;
+}
+
+
+/* RECETA */
+
+#receta{
+    display: flex;
+}
+
+.img-receta{
+    border-radius: 20px; 
+    width: 100%; 
+}
+
+.encabezado-receta h2 {
+    margin-bottom: 3%;
+    font-size: 1.80rem;
+}
+.nombre-receta-verde{
+    font-weight: 900;
+    color: #609000;
+}
+
+.encabezado-receta h3 {
+    margin-bottom: 1%;
+}
+
+.contenedor-imagen-receta{
+    flex-basis: 50%;
+    margin-right: 2%;
+}
+
+.encabezado-receta {
+    flex-basis: 50%;
+    margin-left: 2%;
+}
+
+#preparacion-receta {
+    margin-top: 2%;
+}
+
+.ingrediente{
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-img-ingrediente{
+    flex-basis: 15%;
+    margin-right: 5%; 
+}
+
+.contenedor-texto-ingrediente {
+    flex-basis: 85%; 
+}
+
+.contenedor-ingredientes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-ingredientes h5 {
+    font-weight: 500;
+}
+
+.ingrediente{
+    flex-basis: 49%;
+    margin-bottom: 3%;
+    margin-right: 1%;
+}
+
+#preparacion-receta h3 {
+    margin-bottom: 1%;
+}
+
+#preparacion-receta p {
+    font-size: 0.80rem;
+    margin-bottom: 0.50%;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 700*/
+
+.contenedor-ingredientes h6 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.enlace-video-descarga {
+    padding: 0.50% 1% 0.50% 1%;
+    border: 1px solid #609000;
+    font-size: 0.8rem;
+    color:#609000;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+}
+.enlace-video-descarga:hover{
+    border: 1px solid #609000;
+    color:black;
+    background-color:#609000;
+    font-weight: 700;
+}
+
+.contenedor-enlaces{
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+}
+
+.encabezado-receta h3, #preparacion-receta h3{
+    font-size: 1.5rem;
+    margin-bottom: 1.2%;
+    border-left: 5px solid #609000;
+    padding-left: 15px;   
+}
+
+
+
+
+/* NOTICIAS */
+
+#noticias h2 {
+    border-left: 5px solid #609000;
+    padding-left: 2%;
+    margin-bottom: 2%;
+}
+
+.contenedor-noticia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 2%;      
+}
+
+.contenedor-noticia:hover {
+    background-color: #e7e7e7;
+}
+
+.contenedor-img-noticia {
+    flex-basis: 10%;
+    margin-right: 2%;    
+}
+
+.texto-noticia{
+    flex-basis: 75%;
+    margin-right: 2%;
+}
+
+.enlace-page-noticias{
+    color: #609000;    
+    flex-basis: 10%;
+    font-weight: 700;
+}
+
+.enlace-page-noticias:hover{
+    color: black;
+    text-decoration: wavy underline;
+    cursor: pointer;
+}
+
+
+
+/* CONTACTO */
+#contenedor-contacto {
+    display: flex;
+}
+
+#informacion-contacto{
+    flex-basis: 40%;    
+}
+
+#informacion-contacto h2{
+    border-left: 5px solid #609000;
+    padding-left: 2%; 
+    margin-bottom: 2%;   
+    margin-top: 5%;           
+}
+
+#informacion-contacto li{
+    display: block;
+    margin-bottom: 2%;
+}
+
+.enlace-contacto{
+    color: #609000;
+}
+
+.enlace-contacto:hover{
+    text-decoration: wavy underline;
+    color: black;
+}
+
+#formulario {
+    flex-basis: 40%;
+    border-radius: 20px;
+    padding: 2rem 4rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 10%;    
+}
+#formulario h2{
+    width: 100%;
+    border-left: 5px solid #609000;  
+    padding-left: 2%; 
+    margin-bottom: 2%;      
+}
+
+fieldset {
+    border: none;
+}
+
+.campo-for {
+    display: block;
+    margin-bottom: 2%;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.campo-for input {
+    font-family: "Raleway", sans-serif;      
+    margin-top: 0.7%;
+    display: block;
+    padding: 1.2%;
+    width: 80%;
+    color:#609000;
+    background-color: rgba(96, 144, 0, 0.2);
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+}
+
+
+.campo-motivo{
+    display: flex;
+
+}
+
+textarea {
+    width: 55%;
+    color:#609000;
+    background-color: rgba(96, 144, 0, 0.2);
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+    padding: 1%; 
+    margin-left: 3%;   
+}
+
+
+.campo-boton{
+    justify-content: right;
+}
+
+.campo-boton input{
+    padding: 1%;
+    background-color:#609000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;    
+    font-weight: 700;
+    border: 1px solid #609000;  
+}
+
+.campo-boton input:hover{
+    background-color:white;
+    border: 1px solid #609000;   
+}
+
+#formotivo {
+    font-family: "Raleway", sans-serif;      
+    margin-top: 0.7%;
+    display: block;
+    padding: 1.2%;
+    width: 100%;
+    border: 1px solid #609000;
+    border-radius: 10px;     
+}

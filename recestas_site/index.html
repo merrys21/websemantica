@@ -1,0 +1,140 @@
+<!--
+    Nombre: Maria Fernandez 
+    Fecha: 29/11/2024 
+    Modulo: Lenguaje de marcas y Sistemas de gestión de la información. 
+    UD2. 
+    LMSGI02 Tarea evaluativa 2 (80%). Sitio Web.
+    Autoevaluación: 
+    Descripción:    Desarrollar el sitio web diseñado en la primera tarea de evaluación.
+                    Mostrar información sobre un tema, en mi caso, una página de recetas.
+                    Sitio completo con 5 páginas web (presentación, navegación, noticias, listado de productos, etc.)
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<!--CABECERA-->
+<head>
+    <title>ÑAM ÑAM El Sabor de lo Sano</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Esta página es un sitio de recetas">
+    <meta name="keywords" content="receta, cocina, ingredientes, elaboración, preparación, menú, carne, ave, pescado, verdura, marisco">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!--Añadir tipografía de Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<!--CUERPO-->
+<body>
+
+    <header>
+        <!--MENU NAVEGACIÓN-->
+        <h1 class="logo-cabecera"><a href="index.html"><img src="img/logo-aguacate.png" alt="ÑAM ÑAM" class="img-logo-cabecera"></a></h1>
+        <nav> 
+            <ul>
+                <li class="pointer"><a class="enlace" href="index.html">INICIO</a></li>                
+                <li class="pointer"><a class="enlace" href="pages/recetas.html">RECETAS</a></li>
+                <li class="pointer"><a class="enlace" href="pages/noticias.html">NOTICIAS</a></li>                
+                <li class="pointer"><a class="enlace" href="pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="presentacion">
+        <article class="modulo-texto">
+            <h1 class="titular-cabecera">El <span class="verde">Sabor</span> de lo <span class="verde">Sano</span></h1>            
+            <p class="texto-cabecera">
+                Un mundo de recetas deliciosas, fáciles y saludables, diseñadas para cuidarnos. 
+                Comer bien no solo es bueno para el cuerpo, sino también un placer para el paladar.            
+                Desde platos coloridos llenos de nutrientes hasta opciones rápidas y equilibradas para el día a día, 
+                inspirate para disfrutar de la cocina con ingredientes frescos y sabrosos.</p>
+            <p style="margin-top: 2%;"><strong>¡Ponte el delantal y descúbrelo!</strong></p>
+        </article>
+        <article class="modulo-img">
+            <img src="img/img-cabecera.png" alt="Imagen cabecera" class="img-cabecera">
+        </article>
+
+    </section>
+
+    <div id="contenido-inicio">
+        <section class="recetas-pop">
+            <h3>Recetas populares</h3>
+            <div class="grupo-recetas-pop">
+
+                <article class="receta-popular">
+                    <img src="../img/crema-antiinflamatoria.jpg" alt="Crema antiinflamatoria con verduras de otoño" class="img-w100 borde-redondeado-medio">
+                    <div class="nombre-enlace-receta-popular">
+                        <h4>Crema antiinflamatoria <br>con verduras de otoño</h4>
+                        <a class="enlace-receta" href="../pages/receta-1.html">Ver receta</a>
+                    </div>                
+                </article>
+
+
+                <article class="receta-popular">
+                    <img src="../img/berenjena-rellena.jpg" alt="Berenjena rellena con salsa de miso, azafrán y pera" class="img-w100 borde-redondeado-medio">
+                    <div class="nombre-enlace-receta-popular">                
+                        <h4>Berenjena rellena con salsa de miso, azafrán y pera</h4>
+                        <a class="enlace-receta" href="#">Ver receta</a>
+                    </div>
+                </article>               
+                
+                <article class="receta-popular">
+                    <img src="../img/ensalada-garbanzos.jpg" alt="Ensalada de garbanzos, naranja y aguacate con salsa de yogur" class="img-w100 borde-redondeado-medio">
+                    <div class="nombre-enlace-receta-popular">
+                        <h4>Ensalada de garbanzos, naranja y aguacate con salsa de yogur</h4>
+                        <a class="enlace-receta" href="#">Ver receta</a>
+                    </div>               
+                </article>                
+
+            </div>
+        </section>
+
+
+        <aside>
+            <h3>Últimas noticias</h3>
+            
+                <article class="ultima-noticia">
+                    <div class="texto-ultima-noticia">                    
+                        <h6>Primeras olimpiadas de nutrición para alumnos de institutos y centros de FP</h6>
+                        <p>La Escuela Universitaria ADEMA organiza la I NutriOlympics, un reto en Nutrición y Salud...</p>
+                    </div>
+                    <a class="enlace-noticia" href="https://www.ultimahora.es/noticias/local/2024/11/21/2279663/primeras-olimpiadas-nutricion-para-alumnos-institutos-centros-fp.html" target="_blank">Leer más</a>
+                </article>    
+        
+                <article class="ultima-noticia">
+                    <div class="texto-ultima-noticia">                    
+                        <h6>Laura Jorge, nutricionista: “Estos alimentos favorecen la relajación”</h6>
+                        <p>La alimentación no solo nutre, sino que también contribuye al bienestar general de la persona. La dietista-nutricionista Laura Jorge explica qué nutrientes y alimentos favorecen en mayor...</p>
+                    </div>
+                    <a class="enlace-noticia" href="https://cuidateplus.marca.com/alimentacion/nutricion/2024/11/21/laura-jorge-nutricionista-alimentos-favorecen-relajacion-182457.html" target="_blank">Leer más</a>
+ 
+                </article>    
+        
+                <article class="ultima-noticia">
+                    <div class="texto-ultima-noticia">                    
+                        <h6>Soy técnica en nutrición y éstos son mis cereales sanos de marca blanca preferidos del supermercado</h6>
+                        <p>DAna Luzón aconseja leer siempre bien la etiqueta y buscar opciones con menos de cinco ingredientes, sin azúcares añadidos ni jarabes...</p>
+                    </div>
+                    <a class="enlace-noticia" href="https://www.huffingtonpost.es/life/salud/soy-tecnica-nutricion-estos-son-mis-cereales-sanos-marca-blanca-preferidos-supermercado.html" target="_blank">Leer más</a>
+                </article>                                       
+          
+        </aside>
+    </div>
+
+    <footer>
+        <p xmlns:cc="http://creativecommons.org/ns#">
+            Esta obra está licenciada bajo
+            <a class="enlace-footer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+            CC BY-NC-ND 4.0 
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!--
+    Nombre: Maria Fernandez 
+    Fecha: 29/11/2024 
+    Modulo: Lenguaje de marcas y Sistemas de gestión de la información. 
+    UD2. 
+    LMSGI02 Tarea evaluativa 2 (80%). Sitio Web.
+    Autoevaluación: 
+    Descripción:    Desarrollar el sitio web diseñado en la primera tarea de evaluación.
+                    Mostrar información sobre un tema, en mi caso, una página de recetas.
+                    Sitio completo con 5 páginas web (presentación, navegación, noticias, listado de productos, etc.)
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <!--CABECERA-->
+<head>
+    <title>ÑAM ÑAM Recetas</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Esta página es un sitio de recetas">
+    <meta name="keywords" content="receta, cocina, ingredientes, elaboración, preparación, menú, carne, ave, pescado, verdura, marisco">
+
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!--Añadir tipografía de Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+
+<!--CUERPO-->
+<body>
+
+    <header>
+        <!--MENU NAVEGACIÓN-->
+        <h1 class="logo-cabecera"><a href="../../index.html"><img src="../img/logo-aguacate.png" alt="ÑAM ÑAM" class="img-logo-cabecera"></a></h1>
+        <nav> 
+            <ul>
+                <li class="pointer"><a class="enlace" href="../../index.html">INICIO</a></li>                
+                <li class="pointer"><a class="enlace" href="recetas.html">RECETAS</a></li>
+                <li class="pointer"><a class="enlace" href="noticias.html">NOTICIAS</a></li>                
+                <li class="pointer"><a class="enlace" href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="categorias">
+        <article class="categoria">
+            <a href="listado-categoria-1.html">
+                <img src="../img/entrantes.png" alt="Entrantes" class="img-w100">
+                <h5>Entrantes</h5>
+            </a>
+        </article>
+
+        <article class="categoria">
+            <a href="#">         
+                <img src="../img/principal.png" alt="Principales" class="img-w100">
+                <h5>Principales</h5>
+            </a>   
+        </article>
+        
+        <article class="categoria">
+            <a href="#">             
+                <img src="../img/verduras.png" alt="Verduras" class="img-w100">
+                <h5>Verduras</h5>
+            </a>
+        </article>
+
+        <article class="categoria">
+            <a href="#">              
+                <img src="../img/carne.png" alt="Carnes" class="img-w100">
+                <h5>Carnes</h5>
+            </a>    
+        </article>  
+
+        <article class="categoria">
+            <a href="#">               
+                <img src="../img/pescado.png" alt="Pescados" class="img-w100">
+                <h5>Pescados</h5>
+            </a>    
+        </article>
+
+        <article class="categoria">
+            <a href="#">             
+                <img src="../img/snack.png" alt="Snacks" class="img-w100">
+                <h5>Snacks</h5>
+            </a>    
+        </article>                
+
+    </section>
+
+    <div id="contenedor-menu-guia">
+        <section id="menus">
+            <h2>MENÚS</h2>        
+            <article class="menu">
+                <h6>Menú 1</h6>
+                <img src="../img/menu1.jpg" alt="Menu 1" class="img-w100 margen-bot">
+                <a class="enlace-menu" href="">Descargar</a>
+            </article>
+            <article class="menu">
+                <h6>Menú 2</h6>
+                <img src="../img/menu2.jpg" alt="Menu 2" class="img-w100 margen-bot">
+                <a class="enlace-menu" href="">Descargar</a>
+            </article>
+            <article class="menu">
+                <h6>Menú 3</h6>
+                <img src="../img/menu3.jpg" alt="Menu 3" class="img-w100 margen-bot">
+                <a class="enlace-menu" href="">Descargar</a>
+            </article>                
+        </section>
+    
+        <section id="guia">
+            <h2>GUÍA NUTRICIONAL</h2>        
+            <img src="../img/guia-nutricional.jpg" alt="Guia" class="img-w100 img-guia">
+            <article>
+                <h4>Nutrición para el Bienestar</h4>
+                <p class="guia-texto">Aprende a equilibrar tu alimentación con consejos prácticos, información sobre alimentos y tips saludables para sentirte mejor cada día.</p>
+                <a class="enlace-guia" href="">Leer más</a>            
+            </article>
+        </section>    
+    </div>
+
+    <footer>
+        <p xmlns:cc="http://creativecommons.org/ns#">
+            Esta obra está licenciada bajo
+            <a class="enlace-footer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+            CC BY-NC-ND 4.0 
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+    
+</body>
+</html>

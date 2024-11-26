@@ -1,0 +1,113 @@
+<!--
+    Nombre: Maria Fernandez 
+    Fecha: 29/11/2024 
+    Modulo: Lenguaje de marcas y Sistemas de gestión de la información. 
+    UD2. 
+    LMSGI02 Tarea evaluativa 2 (80%). Sitio Web.
+    Autoevaluación: 
+    Descripción:    Desarrollar el sitio web diseñado en la primera tarea de evaluación.
+                    Mostrar información sobre un tema, en mi caso, una página de recetas.
+                    Sitio completo con 5 páginas web (presentación, navegación, noticias, listado de productos, etc.)
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <!--CABECERA-->
+<head>
+    <title>ÑAM ÑAM Noticias</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Esta página es un sitio de recetas">
+    <meta name="keywords" content="receta, cocina, ingredientes, elaboración, preparación, menú, carne, ave, pescado, verdura, marisco">
+
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!--Añadir tipografía de Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+
+<!--CUERPO-->
+<body>
+
+    <header>
+        <!--MENU NAVEGACIÓN-->
+        <h1 class="logo-cabecera"><a href="../../index.html"><img src="../img/logo-aguacate.png" alt="ÑAM ÑAM" class="img-logo-cabecera"></a></h1>
+        <nav> 
+            <ul>
+                <li class="pointer"><a class="enlace" href="../../index.html">INICIO</a></li>                
+                <li class="pointer"><a class="enlace" href="recetas.html">RECETAS</a></li>
+                <li class="pointer"><a class="enlace" href="noticias.html">NOTICIAS</a></li>                
+                <li class="pointer"><a class="enlace" href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="noticias">
+        <h2>NOTICIAS</h2>
+
+        <article class="contenedor-noticia">
+            <div class="contenedor-img-noticia"><img class="img-w100" src="../img/noticia1.jpg" alt="Primeras olimpiadas de nutrición para alumnos de institutos y centros de FP">
+            </div>
+            
+            <div class="texto-noticia">
+                <h4>Primeras olimpiadas de nutrición para alumnos de institutos y centros de FP</h4>
+                <p>La Escuela Universitaria ADEMA organiza la I NutriOlympics, un reto en Nutrición y Salud</p>
+            </div>
+
+            <a class="enlace-page-noticias" href="#https://www.ultimahora.es/noticias/local/2024/11/21/2279663/primeras-olimpiadas-nutricion-para-alumnos-institutos-centros-fp.html">Leer más</a>
+        </article>
+
+        <article class="contenedor-noticia">
+            <div class="contenedor-img-noticia"><img class="img-w100" src="../img/noticia2.jpg" alt="Laura Jorge, nutricionista: “Estos alimentos favorecen la relajación”"></div>
+            <div class="texto-noticia">
+            <h4>Laura Jorge, nutricionista: “Estos alimentos favorecen la relajación”</h4>
+            <p>La alimentación no solo nutre, sino que también contribuye al bienestar general de la persona. La dietista-nutricionista Laura Jorge explica qué nutrientes y alimentos favorecen en mayor medida la relajación y por qué.</p>
+            </div>
+            <a class="enlace-page-noticias" href="https://cuidateplus.marca.com/alimentacion/nutricion/2024/11/21/laura-jorge-nutricionista-alimentos-favorecen-relajacion-182457.html">Leer más</a>
+        </article>
+
+        <article class="contenedor-noticia">
+            <div class="contenedor-img-noticia"><img class="img-w100" src="../img/noticia3.jpg" alt="Soy técnica en nutrición y éstos son mis cereales sanos de marca blanca preferidos del supermercado"></div>
+            <div class="texto-noticia">         
+            <h4>Soy técnica en nutrición y éstos son mis cereales sanos de marca blanca preferidos del supermercado</h4>
+            <p>Ana Luzón aconseja leer siempre bien la etiqueta y buscar opciones con menos de cinco ingredientes, sin azúcares añadidos ni jarabes.</p>
+        </div>
+            <a class="enlace-page-noticias" href="https://www.huffingtonpost.es/life/salud/soy-tecnica-nutricion-estos-son-mis-cereales-sanos-marca-blanca-preferidos-supermercado.html">Leer más</a>
+        </article>
+        
+        <article class="contenedor-noticia">
+            <div class="contenedor-img-noticia"><img class="img-w100" src="../img/noticia4.jpg" alt="Luis Zamora, nutricionista: Cada hamburguesa con queso que comemos resta 9 minutos a la esperanza de vida"></div>
+            <div class="texto-noticia">  
+                <h4>Luis Zamora, nutricionista: "Cada hamburguesa con queso que comemos resta 9 minutos a la esperanza de vida"</h4>
+                <p>Nutrimán de Y ahora Sonsoles, como se conoce al nutricionista Luis Zamora, rescata los datos de un estudio realizado por la Universidad de Michigan sobre el impacto de diferentes alimentos en la esperanza de vida, tanto los que alargan como los que acortan.</p>
+            </div>
+            <a class="enlace-page-noticias" href="https://www.telva.com/bienestar/nutricion/2024/11/20/673dca3301a2f111588b4576.html">Leer más</a>
+        </article>    
+
+        <article class="contenedor-noticia">
+            <div class="contenedor-img-noticia"><img class="img-w100" src="../img/noticia5.jpg" alt="Una nutricionista explica por qué cada vez más personas tienen enfermedades digestivas y cómo prevenirlas"></div>
+            <div class="texto-noticia">  
+                <h4>Una nutricionista explica por qué cada vez más personas tienen enfermedades digestivas y cómo prevenirlas</h4>
+                <p>En años recientes, los científicos han dado cada vez más importancia al cuidado del microbioma intestinal para prevenir y tratar patologías muy diferentes, incluyendo los problemas digestivos cada vez más prevalentes.</p>
+            </div>
+            <a class="enlace-page-noticias" href="https://www.20minutos.es/salud/nutricion/por-que-mas-personas-tienen-enfermedades-digestivas-como-prevenirlas-nutricionista-5653757/">Leer más</a>
+        </article>       
+
+    </section>
+
+    <footer>
+        <p xmlns:cc="http://creativecommons.org/ns#">
+            Esta obra está licenciada bajo
+            <a class="enlace-footer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+            CC BY-NC-ND 4.0 
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+            <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+    
+</body>
+</html>
